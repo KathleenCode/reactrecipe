@@ -1,0 +1,74 @@
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: .3rem;
+    margin: 3.5rem;
+    background-image: radial-gradient(#FFF4D2, #E3DFFD, #D1FFF3);
+    /* background-color: #FFE7CE; */
+    border-radius: 5rem;
+    border: 5px dotted #614BC3;
+}
+
+.all img {
+    height: 130px;
+    width: 130px;
+    border-radius: 45%;
+    margin-bottom: -2rem;
+    margin-left: 1.5rem;
+    z-index: 1;
+}
+
+.all img:hover {
+    height: 117px;
+    width: 117px;
+}
+
+.one {
+    background-image: radial-gradient(#F2CD5C, #F99417, #EA8FEA);
+    /* background-color: #F99417; */
+    color:#F11A7B;
+    border-radius: 15px;
+    padding: .5rem 3rem;
+}
+
+.one:hover {
+    background-color: #FFC23C;
+    padding: .5rem 3.7rem;
+}
+
+.one p:first-child {
+    font-size: large;
+    font-weight: bold;
+}
+
+.all button {
+    border-radius: 50%;
+    background-image: radial-gradient(#5D3891, #645CBB, #400E32, #A61F69);
+    /* background-color: #80489C; */
+    color:#FFBF00;
+    border: 3px solid #A61F69;
+    margin-top: -2.5rem;
+    padding: 3rem 1.7rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .all {
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1rem 5rem;
+    }
+    
+    .all img {
+        height: 130px;
+        width: 130px;
+        margin-right: -2rem;
+    }
+    
+    .all button {
+        margin-left: -2.5rem;
+        margin-top: .5rem;
+        padding: 3rem 1.7rem;
+    }
+}

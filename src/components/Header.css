@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Oswald:wght@200;300;600;700&family=Rubik+Bubbles&display=swap');
+.all {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#FFECEC, #D4E2D4, #FAF3F0, #D5FFE4, #FDE5EC);
+    /* background-color: #FAF3F0; */
+    border-radius: 5rem;
+}
+
+.one {
+    background-image: radial-gradient(#F11A7B, #3E001F, #CD6688);
+    /* background-color: #451952; */
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    color:#FFF3DA;
+    height: 35vh;
+    width: 17vw;
+    font-family: "Dancing Script";
+    /* font-style: italic; */
+}
+
+.one span {
+    color: #FFF3DA;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.one img {
+    object-fit: contain;
+    height: 30vh;
+    width: 16vw;
+    border-radius: 50%;
+}
+
+.two {
+    color: #6527BE;
+    font-family: "serif, Rubik+Bubbles";
+}
+
+.two p {
+    overflow-wrap: break-word;
+    width: 40%;
+    padding-left: 17rem;
+    color: #35155D;
+}
+
+@media only screen and (max-width: 1000px) {
+    .all {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .one {
+        background-color: #451952;
+        height: 30vh;
+        width: 90vw;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .one span {
+        color: #FFF3DA;
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    .one img {
+        padding-top: 1rem;
+        height: 27vh;
+        width: 50vw;
+    }
+    
+    .two p {
+        overflow-wrap: break-word;
+        width: 50%;
+        padding-left: 11rem;
+        color: #35155D;
+    }
+    
+}
